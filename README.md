@@ -43,9 +43,13 @@ networks:
     driver: bridge
 ```
 說明：
+
 *在`db`中需要明確定義Postgres數據庫的用戶名、密碼和數據庫名,
+
 *在`sonarqube`中的數據庫的用戶名、密碼和數據庫名要和db中的定義保持一致,
+
 *由于`sonarqube`镜像有bug，需要同时用`sonar.jdbc.xxx`和S`ONARQUBE_JDBC_XXX`指定数据库的用户名、密码和数据库名（否则会出现仍然使用默认的H2数据库的问题，或者打开SonarQube后发现Rules和Quality Profile为空的问题）,
+
 
 另外，`sonarqube`和`postgres`镜像也有版本兼容问题，经测试的兼容版本包括：,
 
