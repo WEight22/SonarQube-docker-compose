@@ -1,5 +1,5 @@
 # SonarQube-docker-compose
-
+```
     version: "2"
 
     services:
@@ -40,3 +40,4 @@
     networks:
       sonarnet:
         driver: bridge
+```
