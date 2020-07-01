@@ -44,20 +44,27 @@ networks:
 ```
 說明：
 
-*在`db`中需要明確定義Postgres數據庫的用戶名、密碼和數據庫名,
+*在`db`中需要明確定義Postgres數據庫的用戶名、密碼和數據庫名
 
-*在`sonarqube`中的數據庫的用戶名、密碼和數據庫名要和db中的定義保持一致,
+*在`sonarqube`中的數據庫的用戶名、密碼和數據庫名要和db中的定義保持一致
 
-*由于`sonarqube`镜像有bug，需要同时用`sonar.jdbc.xxx`和S`ONARQUBE_JDBC_XXX`指定数据库的用户名、密码和数据库名（否则会出现仍然使用默认的H2数据库的问题，或者打开SonarQube后发现Rules和Quality Profile为空的问题）,
+*由于`sonarqube`镜像有bug，需要同时用`sonar.jdbc.xxx`和S`ONARQUBE_JDBC_XXX`指定数据库的用户名、密码和数据库名（否则会出现仍然使用默认的H2数据库的问题，或者打开SonarQube后发现Rules和Quality Profile为空的问题）
 
 
-另外，`sonarqube`和`postgres`镜像也有版本兼容问题，经测试的兼容版本包括：,
+另外，`sonarqube`和`postgres`镜像也有版本兼容问题，经测试的兼容版本包括：
 
-`sonarqube:6.7.1` and `postgres:9.6`,
-`sonarqube:6.4` and `postgres:9.4`,
-`sonarqube:7.0` and `postgres:9.6`,
-详细的`docker-compose.yml`和一键安装脚本参见：,
+`sonarqube:6.7.1` and `postgres:9.6`
+
+`sonarqube:6.4` and `postgres:9.4`
+
+`sonarqube:7.0` and `postgres:9.6`
+
+详细的`docker-compose.yml`和一键安装脚本参见：
+
 https://github.com/cookcodeblog/OneDayDevOps/tree/master/components/sonarqube
+
 ————————————————
+
 版权声明：本文为CSDN博主「nklinsirui」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+
 原文链接：https://blog.csdn.net/nklinsirui/java/article/details/90405159
