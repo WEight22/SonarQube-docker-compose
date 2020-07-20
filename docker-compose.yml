@@ -3,7 +3,7 @@ version: "2"
 
 services:
   sonarqube:
-    image: sonarqube:6.7.1
+    image: sonarqube
     restart: always
     ports:
       - "9000:9000"
@@ -28,7 +28,7 @@ services:
         hard: "65536"
 
   db:
-    image: postgres:9.6
+    image: postgres
     restart: always
     networks:
       - sonarnet
