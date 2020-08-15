@@ -24,6 +24,7 @@ services:
       - /srv/docker/sonarqube/sonarqube_conf:/opt/sonarqube/conf
       - /srv/docker/sonarqube/sonarqube_data:/opt/sonarqube/data
       - /srv/docker/sonarqube/sonarqube_extensions:/opt/sonarqube/extension
+      - /srv/docker/sonarqube/sonarqube_bundled-plugins:/opt/sonarqube/lib/bundled-plugins
     ulimits:
       nofile:
         soft: "65536"
