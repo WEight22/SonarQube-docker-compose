@@ -6,7 +6,7 @@ version: "2"
 services:
   sonarqube:
     image: sonarqube:8.4.1-community
-    restart: always
+#    restart: always
     ports:
       - "9000:9000"
     depends_on:
