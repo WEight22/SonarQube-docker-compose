@@ -18,11 +18,11 @@ services:
       - SONARQUBE_JDBC_USERNAME=sonar
       - SONARQUBE_JDBC_PASSWORD=sonar
       - SONARQUBE_JDBC_URL=jdbc:postgresql://db:5432/sonarqube
-    volumes:
-      - /srv/docker/sonarqube/sonarqube_conf:/opt/sonarqube/conf
-      - /srv/docker/sonarqube/sonarqube_data:/opt/sonarqube/data
-      - /srv/docker/sonarqube/sonarqube_extensions:/opt/sonarqube/extensions
-      - /srv/docker/sonarqube/sonarqube_bundled-plugins:/opt/sonarqube/lib/bundled-plugins
+#    volumes:
+#      - /srv/docker/sonarqube/sonarqube_conf:/opt/sonarqube/conf
+#      - /srv/docker/sonarqube/sonarqube_data:/opt/sonarqube/data
+#      - /srv/docker/sonarqube/sonarqube_extensions:/opt/sonarqube/extensions
+#      - /srv/docker/sonarqube/sonarqube_bundled-plugins:/opt/sonarqube/lib/bundled-plugins
     ulimits:
       nofile:
         soft: "65536"
